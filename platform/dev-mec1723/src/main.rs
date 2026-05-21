@@ -2,7 +2,6 @@
 #![no_main]
 
 mod board;
-mod clocks;
 
 use board::Board;
 use defmt::info;
@@ -15,7 +14,7 @@ use platform_common::mock::MockOdpRelayHandler;
 use static_cell::StaticCell;
 
 #[embassy_executor::task]
-async fn uart_service(uart: uart::Uart<>, relay: MockOdpRelayHandler) {
+async fn uart_service(uart: uart::Uart<'static, uart::Async>, relay: MockOdpRelayHandler) {
     info!("Starting uart service");
     static UART_SERVICE: StaticCell<uart_service::Service<MockOdpRelayHandler>> = StaticCell::new();
     let uart_service = uart_service::Service::new(relay).unwrap();
@@ -27,12 +26,10 @@ async fn uart_service(uart: uart::Uart<>, relay: MockOdpRelayHandler) {
 
 #[embassy_executor::main]
 async fn main(spawner: Spawner) {
-    let mut cfg = embassy_mcxa::config::Config::default();
-    cfg.clock_cfg = clocks::config();
-    let p = embassy_mcxa::init(cfg);
+    let p = embassy_microchip::init(embassy_microchip::config::Config::default());
     let board = Board::init(p);
 
-    info!("Hello world from MCXA!");
+    info!("Hello world from MEC1723!");
 
     let relay = platform_common::mock::init(spawner).await;
     spawner.spawn(uart_service(board.uart, relay).expect("Failed to spawn UART service task"));
