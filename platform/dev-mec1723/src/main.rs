@@ -8,14 +8,14 @@ use board::Board;
 use defmt::info;
 use defmt_rtt as _;
 use embassy_executor::Spawner;
-use embassy_mcxa::lpuart;
+use embassy_microchip::uart;
 use panic_probe as _;
 use platform_common::board::BoardIo;
 use platform_common::mock::MockOdpRelayHandler;
 use static_cell::StaticCell;
 
 #[embassy_executor::task]
-async fn uart_service(uart: lpuart::LpuartBbq, relay: MockOdpRelayHandler) {
+async fn uart_service(uart: uart::Uart<>, relay: MockOdpRelayHandler) {
     info!("Starting uart service");
     static UART_SERVICE: StaticCell<uart_service::Service<MockOdpRelayHandler>> = StaticCell::new();
     let uart_service = uart_service::Service::new(relay).unwrap();
