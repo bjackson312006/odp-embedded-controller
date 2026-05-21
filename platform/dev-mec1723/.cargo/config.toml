@@ -1,5 +1,5 @@
-[target.thumbv8m.main-none-eabihf]
-runner = 'probe-rs run --chip MCXA276 --preverify --verify --protocol swd --speed 12000'
+[target.thumbv7em-none-eabihf]
+runner = 'probe-rs run --chip MEC1723N_B0_SZ --preverify --verify --protocol swd --speed 12000'
 
 rustflags = [
     "-C",
@@ -15,7 +15,7 @@ rustflags = [
 ]
 
 [build]
-target = "thumbv8m.main-none-eabihf" # Cortex-M33
+target = "thumbv7em-none-eabihf"
 
 [env]
 DEFMT_LOG = "trace"
