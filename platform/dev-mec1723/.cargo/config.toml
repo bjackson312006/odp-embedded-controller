@@ -1,5 +1,5 @@
 [target.thumbv7em-none-eabihf]
-runner = 'probe-rs run --chip MEC1723N_B0_SZ --preverify --verify --protocol swd --speed 12000'
+runner = 'probe-rs run --chip MEC1723N_B0_SZ --protocol swd --speed 4000'
 
 rustflags = [
     "-C",
