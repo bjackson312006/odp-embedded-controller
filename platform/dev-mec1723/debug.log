@@ -1,0 +1,1127 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `probe-rs run --chip MEC1723N_B0_SZ --protocol swd --speed 4000 target/thumbv7em-none-eabihf/debug/dev-mec1723`
+[34mDEBUG[0m [2mprobe_rs::cmd::run[0m[2m:[0m No .embedded_test linker section in ELF
+[34mDEBUG[0m [2mprobe_rs::cmd::run[0m[2m:[0m No embedded-test in ELF file. Running as normal
+[34mDEBUG[0m [1mlist_cmsisdap_devices[0m: [2mprobe_rs::probe::cmsisdap::tools[0m[2m:[0m Searching for CMSIS-DAP probes using nusb
+[34mDEBUG[0m [1mlist_cmsisdap_devices[0m: [2mprobe_rs::probe::cmsisdap::tools[0m[2m:[0m Found 0 CMSIS-DAP probes using nusb, searching HID
+[34mDEBUG[0m [1mlist_cmsisdap_devices[0m: [2mprobe_rs::probe::cmsisdap::tools[0m[2m:[0m Found 0 CMSIS-DAP probes total
+[34mDEBUG[0m [1mlist_wlink_devices[0m: [2mprobe_rs::probe::wlink[0m[2m:[0m Searching for WCH-Link(RV) probes
+[34mDEBUG[0m [1mlist_wlink_devices[0m: [2mprobe_rs::probe::wlink[0m[2m:[0m Found 0 WCH-Link probes total
+[34mDEBUG[0m [2mprobe_rs::config::registry[0m[2m:[0m Searching registry for chip with name MEC1723N_B0_SZ
+[34mDEBUG[0m [2mprobe_rs::config::registry[0m[2m:[0m Exact match for chip name: MEC1723N_B0_SZ
+[32m INFO[0m [2mprobe_rs::config::target[0m[2m:[0m Using sequence Arm(Mec172x)
+[34mDEBUG[0m [2mprobe_rs::probe::cmsisdap::tools[0m[2m:[0m Attempting to open 1366:1020 in CMSIS-DAP v1 mode
+[34mDEBUG[0m [2mprobe_rs::probe::stlink[0m[2m:[0m Opening ST-Link: DebugProbeSelector { vendor_id: 4966, product_id: 4128, interface: None, serial_number: Some("000852004071") }
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m scanning 1 interfaces
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link interface is #0
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m legacy caps: 3120528318
+[34mDEBUG[0m [2mprobe_rs::probe::jlink::capabilities[0m[2m:[0m unknown capability bits: 0x28edcf16fb17c1db9ff7bbf truncated to 0x1b9ff7bbf
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m extended caps: 7415495614
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface Fine, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface Pic32Icsp, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface Spi, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface C2, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface CJtag, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link returned interface Mc2WireJtag, which is not supported by probe-rs.
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link max mem block size for SWD IO: 23704 byte
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link config: JlinkConfig { usb_address: Some(0), kickstart_power: None, ip_address: None, subnet_mask: None, mac_address: None }
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m Supported speeds: SpeedInfo { base_freq: 180000000, min_div: 12 }
+[32m INFO[0m [2mprobe_rs::probe::jlink::speed[0m[2m:[0m Selecting speed: 4000 Hz
+[32m INFO[0m [2mprobe_rs::util::common_options[0m[2m:[0m Protocol speed 4000 kHz
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m Attaching to J-Link
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m Attaching with protocol 'SWD'
+[32m INFO[0m [2mprobe_rs::probe::jlink::speed[0m[2m:[0m Selecting speed: 4000 Hz
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link: Capabilities: 7415495614
+[32m INFO[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link: Firmware version: J-Link V12 compiled Mar 26 2026 10:14:53
+[32m INFO[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link: Hardware version: J-Link 12.0.0
+[32m INFO[0m [2mprobe_rs::probe::jlink[0m[2m:[0m J-Link: Target voltage: 3.28 V
+[34mDEBUG[0m [2mprobe_rs::probe::jlink[0m[2m:[0m Attached succesfully
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Selecting DP Default
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Setting up debug port Default
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Performing SWD line reset
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m SWD: Connecting to debug port with address Default
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Performing SWD line reset
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Reading DPIDR to enable SWD interface
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers)
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m DPIDR became readable after 0ms
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Result of DPIDR read: 0x2ba01477
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Clearing errors using ABORT register
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers)
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers)
+[34mDEBUG[0m [1mdebug_port_connect[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Result of CTRL/STAT read: Ctrl { .0: 4026535745, csyspwrupack: true, csyspwrupreq: true, cdbgpwrupack: true, cdbgpwrupreq: true, cdbgrstack: false, c_dbg_rst_req: false, errmode: false, trn_cnt: 0, mask_lane: 15, w_data_err: false, read_ok: true, sticky_err: false, stick_cmp: false, trn_mode: 0, sticky_orun: false, orun_detect: true }
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Reading DP register DPIDR [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers) [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Read    DP register DPIDR, value=0xDPIDR { .0: 2ba01477, revision: 00000002, part_no: 000000ba, min: false   , version: 00000001, designer: 0000023b, jep_cc: 00000004, jep_id: 0000003b } [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Reading DP register CTRL/STAT [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers) [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Read    DP register CTRL/STAT, value=0xCtrl { .0: f0000f41, csyspwrupack: true    , csyspwrupreq: true    , cdbgpwrupack: true    , cdbgpwrupreq: true    , cdbgrstack: false   , c_dbg_rst_req: false   , errmode: false   , trn_cnt: 00000000, mask_lane: 0000000f, w_data_err: false   , read_ok: true    , sticky_err: false   , stick_cmp: false   , trn_mode: 00000000, sticky_orun: false   , orun_detect: true     } [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register ABORT, value=0x0000001f [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mAbort { .0: 31 }[0m
+[34mDEBUG[0m [1mdebug_port_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mAbort { .0: 31 }[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Reading DP register CTRL/STAT [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers) [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Read    DP register CTRL/STAT, value=0xCtrl { .0: f0000f41, csyspwrupack: true    , csyspwrupreq: true    , cdbgpwrupack: true    , cdbgpwrupreq: true    , cdbgrstack: false   , c_dbg_rst_req: false   , errmode: false   , trn_cnt: 00000000, mask_lane: 0000000f, w_data_err: false   , read_ok: true    , sticky_err: false   , stick_cmp: false   , trn_mode: 00000000, sticky_orun: false   , orun_detect: true     } [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Reading DP register DPIDR [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 1 transfers (0 additional transfers) [2m[3mdp[0m[2m=[0mDefault[0m
+[34mDEBUG[0m [1mread_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Read    DP register DPIDR, value=0xDPIDR { .0: 2ba01477, revision: 00000002, part_no: 000000ba, min: false   , version: 00000001, designer: 0000023b, jep_cc: 00000004, jep_id: 0000003b } [2m[3mdp[0m[2m=[0mDefault[0m
+[32m INFO[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Debug Port version: DPv1 MinDP: NotImplemented
+[34mDEBUG[0m [1mdebug_device_unlock[0m: [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m debug_device_unlock - empty by default
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 }) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 }) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0 [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mid[0m[2m=[0m0[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842752[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0 [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0 [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: a05f0003 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edfc [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mdebug_core_start[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mid[0m[2m=[0m0[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edfc [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edfc [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1000000 } [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mdebug_core_start[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mid[0m[2m=[0m0[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16973827[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m1[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Core was halted when connecting, reason: Request
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ef40
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ef40 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m269549601[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Cached halt reason: Halted(Request)
+[32m INFO[0m [2mprobe_rs::session[0m[2m:[0m Core 0 already halted
+[32m INFO[0m [2mprobe_rs::session[0m[2m:[0m Clearing breakpoints for core 0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002008
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002008 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000200c
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000200c }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002010
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002010 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002014
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002014 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002018
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002018 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe0002000
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e0002000 }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m608[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000201c
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000201c }
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mclear_all_hw_breakpoints[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Found loadable segment, physical address: 0x000c0000, virtual address: 0x000c0000, flags: 0x4
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Matching section: ".vector_table"
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Found loadable segment, physical address: 0x000c02f0, virtual address: 0x000c02f0, flags: 0x5
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Matching section: ".text"
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Found loadable segment, physical address: 0x000c3944, virtual address: 0x000c3944, flags: 0x4
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Matching section: ".rodata"
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Found loadable segment, physical address: 0x000c4f80, virtual address: 0x00126d88, flags: 0x6
+[32m INFO[0m [2mprobe_rs::flashing::download[0m[2m:[0m Matching section: ".data"
+[32m INFO[0m [2mprobe_rs::flashing::loader[0m[2m:[0m Found 4 loadable sections:
+[32m INFO[0m [2mprobe_rs::flashing::loader[0m[2m:[0m     .vector_table at 0x000C0000 (752 bytes)
+[32m INFO[0m [2mprobe_rs::flashing::loader[0m[2m:[0m     .text at 0x000C02F0 (13908 bytes)
+[32m INFO[0m [2mprobe_rs::flashing::loader[0m[2m:[0m     .rodata at 0x000C3944 (5688 bytes)
+[32m INFO[0m [2mprobe_rs::flashing::loader[0m[2m:[0m     .data at 0x000C4F80 (104 bytes)
+     Finished in 1.56s
+[32m INFO[0m [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m Performing RAM flash start
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::sequences[0m[2m:[0m RAM flash start for Cortex-M single core target
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x0c0000
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: c0000 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf8
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf8
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf8 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 126d88 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf4
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf4
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf4 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1000d }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mwrite_core_reg[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf8
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf8
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf8 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: c02f1 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf4
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf4
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf4 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1000f }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mwrite_core_reg[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mwrite_core_reg[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [1mwrite_core_reg[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed08
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed08
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed08 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: c0000 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Cached halt reason: Halted(Request)
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0 [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mcondition[0m[2m=[0mHardFault[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0 [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0 [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 30003 } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edfc [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mcondition[0m[2m=[0mHardFault[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16777216[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edfc [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edfc [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1000400 } [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mcondition[0m[2m=[0mHardFault[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0 [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mcondition[0m[2m=[0mCoreReset[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0 [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0 [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 30003 } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edfc [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1menable_vector_catch[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3mcondition[0m[2m=[0mCoreReset[0m [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16778240[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edfc [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edfc [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edfc } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1000401 } [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [1menable_vector_catch[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block [2m[3mcondition[0m[2m=[0mCoreReset[0m
+[34mDEBUG[0m [2mprobe_rs::rtt[0m[2m:[0m Scanning at exact address: 0x00126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block not found
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Clearing RTT control block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Cached halt reason: Halted(Request)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196611[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: a05f000b }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: a05f000d }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16973839[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m1[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Reason for halt has changed, old reason was Halted(Request), new reason is Request
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196623[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m0[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000ed30
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000ed30 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: 1f }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::core::armv7m[0m[2m:[0m Cached halt reason: Halted(Request)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf4
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf4
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf4 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: f }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196623[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf8
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf8 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m795524[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mrun[0m:[1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m196623[0m
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: a05f0007 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Write block with total size 4 bytes to address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Writing chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register DRW, value=DRW { data: a05f0001 }
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mrun[0m: [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished writing block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::rtt[0m[2m:[0m Scanning at exact address: 0x00126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap::memory_ap[0m[2m:[0m reading IDR: IDR { REVISION: 2, DESIGNER: JEP106Code({ cc: 0x04, id: 0x3b } => Some("ARM Ltd")), CLASS: MemAp, _RES0: 0, VARIANT: 1, TYPE: AmbaAhb3 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: f0, ap_sel: 0, ap_bank_sel: f, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x000000f0 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 240, ap_sel: 0, ap_bank_sel: 15, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register CSW, value=CSW { DbgSwEnable: true, HNONSEC: true, MasterType: true, Allocate: false, Cacheable: true, Bufferable: false, Privileged: true, Data: true, SPIDEN: false, TrInProg: false, DeviceEn: true, AddrInc: Single, Size: U32, _reserved_bits: 0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::communication_interface[0m[2m:[0m Changing SELECT to DPv1(SelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 })
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::dp[0m[2m:[0m Writing DP register SELECT, value=0x00000000 [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [1mwrite_dp_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3mdp[0m[2m=[0mDefault [3mregister[0m[2m=[0mSelectV1 { .0: 0, ap_sel: 0, ap_bank_sel: 0, dp_bank_sel: 0 }[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 1 at address 0xe000edf0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: e000edf0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers) [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW"[0m
+[34mDEBUG[0m [1mread_ap_register[0m: [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Register read succesful [2m[3map[0m[2m=[0m0 [3mregister[0m[2m=[0m"DRW" [3mvalue[0m[2m=[0m16842753[0m
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 4 at address 0x126d90
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126d90 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=4 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 5 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126da0
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da0 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 6 at address 0x126da8
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126da8 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=6 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 7 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Reading chunk with len 2 at address 0x126db4
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Writing AP register TAR, value=TAR { address: 126db4 }
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 2 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::ap[0m[2m:[0m Reading register DRW, block with len=2 words
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::traits::polyfill[0m[2m:[0m Performing 3 transfers (1 additional transfers)
+[34mDEBUG[0m [2mprobe_rs::architecture::arm::memory::adi_memory_interface[0m[2m:[0m Finished reading block
+[34mDEBUG[0m [2mprobe_rs::util::rtt::client[0m[2m:[0m Failed to attach - control block corrupted: the write buffer doesn't fully fit in any known (consecutive) ram region according to its own pointers: (start_pointer: 0x1273FC, size: 1024)
