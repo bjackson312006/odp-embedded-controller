@@ -303,6 +303,8 @@ dependencies = [
  "defmt-rtt",
  "embassy-executor",
  "embassy-microchip",
+ "embassy-time",
+ "embedded-hal 0.2.7",
  "panic-probe",
  "platform-common",
  "static_cell",
