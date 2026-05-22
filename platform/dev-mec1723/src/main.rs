@@ -3,13 +3,13 @@
 
 mod board;
 
-//use board::Board;
+use board::Board;
 use defmt::info;
 use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_microchip::uart;
 use panic_probe as _;
-//use platform_common::board::BoardIo;
+use platform_common::board::BoardIo;
 use platform_common::mock::MockOdpRelayHandler;
 use static_cell::StaticCell;
 
@@ -24,33 +24,14 @@ async fn uart_service(uart: uart::Uart<'static, uart::Async>, relay: MockOdpRela
     panic!("uart-service error: {:?}", e);
 }
 
-// #[embassy_executor::main]
-// async fn main(spawner: Spawner) {
-//     info!("Booting...");
-//     let p = embassy_microchip::init(embassy_microchip::config::Config::default());
-//     let board = Board::init(p);
-
-//     info!("Hello world from MEC1723!");
-
-//     let relay = platform_common::mock::init(spawner).await;
-//     spawner.spawn(uart_service(board.uart, relay).expect("Failed to spawn UART service task"));
-// }
-
-use embassy_microchip::gpio::{Level, Output};
-
 #[embassy_executor::main]
-async fn main(_spawner: Spawner) {
-    defmt::info!("RTT initialized!");
-
+async fn main(spawner: Spawner) {
+    info!("Booting...");
     let p = embassy_microchip::init(embassy_microchip::config::Config::default());
-    
-    // Replace with actual LED GPIO from your board schematic
-    let mut led = Output::new(p.GPIO153, Level::Low);  // example pin
-    
-    loop {
-        led.set_high();
-        cortex_m::asm::delay(10_000_000);
-        led.set_low();
-        cortex_m::asm::delay(10_000_000);
-    }
+    let board = Board::init(p);
+
+    info!("Hello world from MEC1723!");
+
+    let relay = platform_common::mock::init(spawner).await;
+    spawner.spawn(uart_service(board.uart, relay).expect("Failed to spawn UART service task"));
 }

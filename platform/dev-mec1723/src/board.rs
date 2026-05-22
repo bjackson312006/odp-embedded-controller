@@ -7,7 +7,6 @@ bind_interrupts!(struct Irqs {
 
 
 /// Board IO for the dev-mec1723 platform.
-#[allow(dead_code)]
 pub struct Board {
     pub uart: uart::Uart<'static, uart::Async>,
 }
