@@ -51,7 +51,7 @@ embassy-executor = { version = "0.10.0", default-features = false, features = [
 ] }
 embassy-microchip = { git = "https://github.com/bjackson312006/embassy", rev = "e85b387cf915241a1d9e0ba32ab4a7a1117896b3", features = [
     "defmt",
-    "mec1723n_b0_sz", # u_Note: the dev board i have with me says 'SZ' on it
+    "mec1723n_b0_sz",
     "rt",
 ] }
 uart-service = { git = "https://github.com/OpenDevicePartnership/embedded-services", branch = "v0.2.0", features = [
