@@ -54,7 +54,7 @@ embassy-microchip = { git = "https://github.com/bjackson312006/embassy", branch 
     "mec1723n_b0_sz",
     "rt",
 ] }
-uart-service = { git = "https://github.com/OpenDevicePartnership/embedded-services", branch = "v0.2.0", features = [
+uart-service = { git = "https://github.com/OpenDevicePartnership/embedded-services", branch = "main", features = [
     "defmt",
 ] }
 static_cell = "2.1.0"
